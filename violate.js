@@ -1,7 +1,7 @@
 
 
 let window_url = window.location.href
-let video_code = /watch\?v=(.*)&?/.exec(window_url)[1]
+let video_code = /watch\?v=([a-zA-Z0-9]*)/.exec(window_url)[1]
 
 //stock embed at 100% size, with current url
 let v_iframe = document.createElement('iframe')
