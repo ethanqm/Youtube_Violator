@@ -5,7 +5,7 @@ let tss = /\&t=([0-9]*)s/.exec(window_url)
 //stock embed at 100% size, with current url
 let v_iframe = document.createElement('iframe')
 v_iframe.width = '100%'
-v_iframe.height = '500'
+v_iframe.height = '800'
 v_iframe.src = 'https://www.youtube.com/embed/'+video_code
 if (tss !== null && tss.length > 1) {v_iframe.src += "&amp; start="+tss[1]}
 v_iframe.title = 'Youtube video player'
