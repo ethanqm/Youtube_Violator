@@ -1,5 +1,5 @@
 let window_url = window.location.href
-let video_code = /watch\?v=([a-zA-Z0-9]*)/.exec(window_url)[1]
+let video_code = /watch\?v=([a-zA-Z0-9\_-]*)/.exec(window_url)[1]
 let tss = /\&t=([0-9]*)s/.exec(window_url)
 
 //stock embed at 100% size, with current url
